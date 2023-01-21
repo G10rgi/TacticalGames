@@ -646,9 +646,7 @@ header.sticky{
 		height: 85vh;
 		transition: .2s;
 	}
-	.GameReq{
-
-	}
+	
 	.GameInfo{
 		width: 100% !important;
 	}
