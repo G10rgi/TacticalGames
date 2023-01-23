@@ -539,25 +539,31 @@ header.sticky{
 
 .downloadBtn{
 	display:flex;
-	justify-content:center;
-	margin-top: 100px;
+	width: max-content;
+	margin: 100px auto 0 auto;
 }
 
 .downloadBtn button{
+	position: relative;
+	display: inline-block;
 	font-size: 30px;
 	padding: 10px 50px;
-	background-color: orange;
 	border: none;
 	transition: all .2s linear;
 	border-radius: 5px;
+	overflow: hidden;
+	transition: 0.2s;
+	background-color: orange;
 }
 
 .downloadBtn button:hover{
-	background-color: white;
-	cursor:pointer;
-	transform: scale(1.05)
+	color: #255784;
+	background: #f3d421;
+	box-shadow: 0 0 10px #f3d421, 0 0 40px #f3d421, 0 0 80px #f3d421;
+	transition-delay: 0.1s;
 	
 }
+
 
 @keyframes fade {
   from {opacity: .4}
@@ -602,12 +608,13 @@ header.sticky{
 		right: -100%;
 		width: 270px;
 		height: 120vh;
-		background: #1067cc;
+		background: rgba(218, 143, 3, 0.678);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 150px 30px;
 		transition: 0.5s all;
+		backdrop-filter: blur(5px);
 	}
 	.navbar a{
 		display: block;
@@ -617,7 +624,7 @@ header.sticky{
 		color: var(--bg-color);
 	}
 	.navbar a:hover{
-		color: var(--text-color);
+		color: maroon;
 	}
 	.open{
 		right: 0;
