@@ -9,6 +9,16 @@ window.onscroll = () => {
 	navbar.classList.remove('open');
 };
 
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+if (menu) {
+  menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navbar.classList.toggle('open');
+  };
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -38,10 +48,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () => {
-	menu.classList.toggle('bx-x');
-	navbar.classList.toggle('open');
-};
