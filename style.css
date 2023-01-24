@@ -602,7 +602,7 @@ header.sticky {
 	color: #255784;
 	background: #f3d421;
 	box-shadow: 0 0 10px #f3d421, 0 0 40px #f3d421, 0 0 80px #f3d421;
-	transition-delay: 0.1s;
+	cursor: pointer;
 }
 
 @keyframes fade {

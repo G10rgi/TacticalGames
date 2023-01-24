@@ -2,9 +2,11 @@ const header = document.querySelector('header');
 const dropdown = document.querySelector('.dropdown');
 const gameslist = document.querySelector('.gameslist');
 
-dropdown.addEventListener('click', () => {
-	gameslist.classList.toggle('active');
-});
+if (dropdown){
+	dropdown.addEventListener('click', () => {
+		gameslist.classList.toggle('active');
+	});
+}
 
 window.addEventListener('scroll', function () {
 	header.classList.toggle('sticky', window.scrollY > 0);
